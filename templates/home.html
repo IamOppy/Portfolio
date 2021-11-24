@@ -12,9 +12,31 @@
         }
         input {
             width: 15%;
-            left: 200px;
-            position: relative;
+            left: 100px;
+            bottom: 900px;
+            position:fixed;
             }
+        button {
+            width: 15%;
+            left: 200px;
+            bottom: 700px;
+            position:fixed;
+            font-size: 20px;
+        }
+        .FormBorder {
+            border: 1px solid;
+            padding: 400px;
+            box-shadow: 5px 10px #888888;
+            position:fixed;
+            }
+        h1 {
+            
+            left: 100px;
+            bottom:930px;
+            position: fixed;
+            font-size:  20px;
+        }
+        
     </style>
 </head>
     <body>
@@ -23,9 +45,15 @@
               <a class="navbar-brand" >Covid-19 Questionnaire</a>
             </div>
           </nav>
-        <form>
-            <input type="text", align="left">
-        </form>
+        
+        <h1><span style="color:#ff0000">*</span>User ID/ID utilisateur</h1>
+        <div class="FormBorder">
+            
+            <form>
+                <input type="text", align="left">
+                <button type="button" class="btn btn-dark">Submit/Soumettre</button>
+            </form>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
