@@ -10,6 +10,22 @@
         .navbar-light .navbar-brand {
             color: white;
         }
+
+        #RadioSelection {
+            width: 11%;
+            left: -5px;
+            bottom: 840px;
+            position:fixed;
+
+        }
+
+        #SecondRadioSelection {
+            width: 11%;
+            left: -5px;
+            bottom: 810px;
+            position:fixed;
+
+        }
         input {
             width: 15%;
             left: 100px;
@@ -36,6 +52,12 @@
             position: fixed;
             font-size:  20px;
         }
+        #LanguageSelect {
+            left: 100px;
+            bottom:860px;
+            position: fixed;
+            font-size:  20px;
+        }
         
     </style>
 </head>
@@ -47,10 +69,21 @@
           </nav>
         
         <h1><span style="color:#ff0000">*</span>User ID/ID utilisateur</h1>
+        <h1 id="LanguageSelect"><span style="color:#ff0000">*</span>Language/Langue</h1>
         <div class="FormBorder">
             
             <form>
                 <input type="text", align="left">
+                <div>
+                    <input id="RadioSelection" type="radio" align="left" value="Eng">
+                    <label for="Eng">English</label>
+                </div>
+                <div>
+                    <input id="SecondRadioSelection" type="radio" align="left" value="Fren">
+                    <label for="Fren">French</label>
+                </div>
+                
+                
                 <button type="button" class="btn btn-dark">Submit/Soumettre</button>
             </form>
         </div>
